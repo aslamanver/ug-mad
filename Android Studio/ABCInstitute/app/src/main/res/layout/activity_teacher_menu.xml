@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abc.abcinstitute.TeacherMenuActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_sentiment_satisfied_black_24dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/newStudentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_wel"
+            android:text="New Student"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_person_add_black_24dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/mngStudentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_wel"
+            android:text="Manage Students"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_group_black_24dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#dadada"/>
+
+        <Button
+            android:id="@+id/newTeacherBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_wel"
+            android:text="New Teacher"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_person_add_black_24dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/mngTeacherBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_wel"
+            android:text="Manage Teachers"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_group_black_24dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/downLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABC Institute of Programming by Aslam"
+            android:textColor="#dadada" />
+
+    </LinearLayout>
+
+    <!--<android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start">
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>-->
+
+</RelativeLayout>

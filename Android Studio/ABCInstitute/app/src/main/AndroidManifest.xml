@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abc.abcinstitute">
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginStudentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginTeacherActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TeacherMenuActivity"
+            android:label="Teacher Menu" />
+        <activity
+            android:name=".NewStudentActivity"
+            android:label="New Student"
+            android:parentActivityName=".TeacherMenuActivity" />
+        <activity
+            android:name=".StudentListActivity"
+            android:label="Students"
+            android:parentActivityName=".TeacherMenuActivity" />
+        <activity
+            android:name=".UpdateStudentActivity"
+            android:label="Update"
+            android:parentActivityName=".StudentListActivity" />
+        <activity
+            android:name=".NewTeacherActivity"
+            android:label="New Teacher"
+            android:parentActivityName=".TeacherMenuActivity" />
+        <activity
+            android:name=".TeacherListActivity"
+            android:label="Teachers"
+            android:parentActivityName=".TeacherMenuActivity" />
+        <activity
+            android:name=".UpdateTeacherActivity"
+            android:label="Update"
+            android:parentActivityName=".TeacherListActivity" />
+        <activity android:name=".StudentMenuActivity" />
+        <activity
+            android:name=".StudentMenuDrawerActivity"
+            android:label="@string/title_activity_student_menu_drawer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
